@@ -1,21 +1,15 @@
-# Cutter-Sanborn Number
+# Número Cutter-Sanborn
 
-Bilingual (ES/EN) web tool for looking up Cutter-Sanborn three-figure author numbers based on the Swanson-Swift revision (1969).
+Ferramenta web trilíngue (PT/ES/EN) para consulta de números de autor Cutter-Sanborn de três dígitos, com base na revisão Swanson-Swift (1969).
 
-**Live site:** [numerocutter.com.ar](https://numerocutter.com.ar)
+## Sobre
 
-## About
+Esta ferramenta realiza uma busca na tabela Cutter-Sanborn completa para encontrar o código de classificação de qualquer nome de autor. Utilizada por bibliotecários para catalogação e classificação.
 
-This tool performs a lookup against the complete Cutter-Sanborn table to find the classification code for any author name. Used by librarians for cataloging and classification.
-
-## Development
+## Desenvolvimento
 
 ```bash
 npm install
 npm run dev
 npm run test
 ```
-
-## Issues
-
-If you find a bug or have a suggestion, please [open an issue](https://github.com/ignatirabo/cutternumber/issues).
