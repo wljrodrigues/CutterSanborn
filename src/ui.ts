@@ -9,6 +9,7 @@ export function initUI(table: CutterEntry[]): void {
   const resultNumber = document.getElementById("result-number")!;
   const resultEntry = document.getElementById("result-entry")!;
   const errorBox = document.getElementById("error-box")!;
+  const errorText = document.getElementById("error-text")!;
   const langSwitch = document.getElementById("lang-switch")!;
 
   langSwitch.addEventListener("click", toggleLang);
@@ -22,14 +23,14 @@ export function initUI(table: CutterEntry[]): void {
     errorBox.classList.add("hidden");
 
     if (!value) {
-      errorBox.textContent = t("errorEmpty");
+      errorText.textContent = t("errorEmpty");
       errorBox.classList.remove("hidden");
       return;
     }
 
     const result = cutterNumber(table, value);
     if (!result) {
-      errorBox.textContent = t("errorNoMatch");
+      errorText.textContent = t("errorNoMatch");
       errorBox.classList.remove("hidden");
       return;
     }
